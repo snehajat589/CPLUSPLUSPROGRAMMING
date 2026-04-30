@@ -7,6 +7,7 @@ void fun(float a){
     cout<<"float";
 }
 int main(){
-    fun(5.5);
-    
+    fun(a);
+    cout<<a;
+    return 0;
 }
