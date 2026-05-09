@@ -1,0 +1,51 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class student//base claass
+{
+   private:
+   string name;
+   int rollno;
+   public:
+   void information(){
+    cout<<"sneha"<<endl;
+   }
+   void info() {
+    cout<<"2341"<<endl;
+   }
+};
+class Result : public student{
+   private:
+   float subj1,subj2,subj3 ;
+   float percentage;
+   char grade;
+   public:
+   void getmarks(){
+   cout << "Enter Marks of 3 Subjects:\n";
+        cin >> subj1 >> subj2 >> subj3;
+    }
+    void calculateresult(){
+     float total = subj1+subj2+subj3;
+     percentage = total / 3;
+
+        if (percentage >= 90)
+            grade = 'A';
+        else if (percentage >= 75)
+            grade = 'B';
+        else if (percentage >= 50)
+            grade = 'C';
+        else
+            grade = 'F';
+    }
+
+     void displayResult() {
+        void info();
+
+        cout << "Subject 1 Marks: " << subj1 << endl;
+        cout << "Subject 2 Marks: " << subj2 << endl;
+        cout << "Subject 3 Marks: " << subj3 << endl;
+
+        cout << "Percentage: " << percentage << "%" << endl;
+        cout << "Grade: " << grade << endl;
+    }
+};
