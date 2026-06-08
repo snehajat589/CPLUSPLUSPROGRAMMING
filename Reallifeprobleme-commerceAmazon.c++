@@ -156,7 +156,7 @@ public:
     }
 };
 
-// Payment Class
+
 class Payment
 {
 private:
